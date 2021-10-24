@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route , Link , Switch} from 'react-router-dom';
+import Circle from "./circle2.svg"
 
-import Home from './inc/home.js';
-import Test from './inc/test';
+import { Home, Test, KidclassA, KidclassC, KidclassD, KidclassB, Choosekid, Sampletem} from './inc'
 
 class App extends Component {
   constructor(props) {
@@ -24,14 +24,28 @@ class App extends Component {
   }
 
   render() {
-    return(
-      <div className='App'>
-        <BrowserRouter>
-          <Route path="/" component={Home} />
-          <Route path="/test" component={Test} />
-        </BrowserRouter>
-      </div>
-    )
+      return (
+          <div>
+
+              <Switch>
+                  <Route path="/test/:data" component={Test}/>
+                  <Route path="/test" component={Test}/>
+                  <Route path="/choosekid/kidclassA" component={KidclassA}/>
+              <Route path="/choosekid/kidclassB" component={KidclassB}/>
+              <Route path="/choosekid/kidclassC" component={KidclassC}/>
+              <Route path="/choosekid/kidclassD" component={KidclassD}/>
+                  <Route path="/choosekid" component={Choosekid}/>
+                  <Route path="/" component={Home} exact/>
+                  <Route path="/sampletem" component={Sampletem} />
+
+
+
+              </Switch>
+              <Link to='/'> Home </Link>
+              <Link to='/sampletem'> sample </Link>
+
+          </div>
+      );
   }
 }
 
