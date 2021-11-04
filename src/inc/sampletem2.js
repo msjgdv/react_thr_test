@@ -1,35 +1,26 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Elements - Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="inc/main.css" />
-		<!--[if lte IE 9]>
-		<link rel="stylesheet" href="inc/ie9.css"/><![endif]-->
-		<!--[if lte IE 8]>
-		<link rel="stylesheet" href="inc/ie8.css"/><![endif]-->
-	</head>
-	<body>
-		<!-- Wrapper -->
+import React, { Component } from 'react';
+import {Link} from "react-router-dom";
+import './main.css'
+import './ie8.css'
+import './ie9.css'
+import './font-awesome.min.css'
+
+class sampletem2 extends Component{
+
+    render(){
+        return(
 			<div id="wrapper">
 
-				<!-- Header -->
+
 					<header id="header">
 						<div class="inner">
 
-							<!-- Logo -->
+
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="../public/images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="inc/images/logo.svg" alt="" /></span><span class="title">Phantom</span>
 								</a>
 
-							<!-- Nav -->
+
 								<nav>
 									<ul>
 										<li><a href="#menu">Menu</a></li>
@@ -39,7 +30,7 @@
 						</div>
 					</header>
 
-				<!-- Menu -->
+
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
@@ -51,17 +42,17 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
+
 					<div id="main">
 						<div class="inner">
 							<h1>Elements</h1>
 
-							<!-- Text -->
+
 								<section>
 									<h2>Text</h2>
 									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									This is <u>underlined</u> and this is code: <code>for (;;) </code>. Finally, <a href="#">this is a link</a>.</p>
 									<hr />
 									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 									<hr />
@@ -74,16 +65,12 @@
 									<h3>Preformatted</h3>
 									<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</section>
 
-							<!-- Lists -->
+
 								<section>
 									<h2>Lists</h2>
 									<div class="row">
@@ -159,7 +146,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</div>
 								</section>
 
-							<!-- Table -->
+
 								<section>
 									<h2>Table</h2>
 									<h3>Default</h3>
@@ -255,7 +242,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</div>
 								</section>
 
-							<!-- Buttons -->
+
 								<section>
 									<h3>Buttons</h3>
 									<ul class="actions">
@@ -288,7 +275,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</ul>
 								</section>
 
-							<!-- Form -->
+
 								<section>
 									<h2>Form</h2>
 									<form method="post" action="#">
@@ -311,23 +298,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												</div>
 											</div>
 											<div class="4u 12u$(small)">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked></input>
 												<label for="demo-priority-low">Low</label>
 											</div>
 											<div class="4u 12u$(small)">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<input type="radio" id="demo-priority-normal" name="demo-priority"></input>
 												<label for="demo-priority-normal">Normal</label>
 											</div>
 											<div class="4u$ 12u$(small)">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<input type="radio" id="demo-priority-high" name="demo-priority"></input>
 												<label for="demo-priority-high">High</label>
 											</div>
 											<div class="6u 12u$(small)">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<input type="checkbox" id="demo-copy" name="demo-copy"></input>
 												<label for="demo-copy">Email me a copy</label>
 											</div>
 											<div class="6u$ 12u$(small)">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<input type="checkbox" id="demo-human" name="demo-human" checked></input>
 												<label for="demo-human">Not a robot</label>
 											</div>
 											<div class="12u$">
@@ -343,33 +330,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</form>
 								</section>
 
-							<!-- Image -->
+
 								<section>
 									<h2>Image</h2>
 									<h3>Fit</h3>
 									<div class="box alt">
 										<div class="row uniform">
-											<div class="12u$"><span class="image fit"><img src="../public/images/pic13.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic01.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic02.jpg" alt="" /></span></div>
-											<div class="4u$"><span class="image fit"><img src="../public/images/pic03.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic03.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic01.jpg" alt="" /></span></div>
-											<div class="4u$"><span class="image fit"><img src="../public/images/pic02.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic02.jpg" alt="" /></span></div>
-											<div class="4u"><span class="image fit"><img src="../public/images/pic03.jpg" alt="" /></span></div>
-											<div class="4u$"><span class="image fit"><img src="../public/images/pic01.jpg" alt="" /></span></div>
+											<div class="12u$"><span class="image fit"><img src="inc/images/pic13.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic01.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic02.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="inc/images/pic03.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic03.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic01.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="inc/images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="inc/images/pic03.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="inc/images/pic01.jpg" alt="" /></span></div>
 										</div>
 									</div>
 									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="../public/images/pic14.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="../public/images/pic15.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									<p><span class="image left"><img src="inc/images/pic14.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									<p><span class="image right"><img src="inc/images/pic15.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 								</section>
 
 						</div>
 					</div>
 
-				<!-- Footer -->
+
 					<footer id="footer">
 						<div class="inner">
 							<section>
@@ -410,12 +397,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+
+
+        );
+    }
+
+}
+
+export default sampletem2;

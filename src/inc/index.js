@@ -6,3 +6,5 @@ export { default as KidclassC } from './kidclassC';
 export { default as KidclassD } from './kidclassD';
 export { default as Choosekid } from './choosekid';
 export { default as Sampletem } from './sampletem';
+export { default as Menu } from './menu';
+export { default as Sampletem2 } from './sampletem2';

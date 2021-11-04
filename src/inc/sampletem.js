@@ -1,44 +1,42 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {Link} from "react-router-dom";
-import './main.css'
+
 import './ie8.css'
 import './ie9.css'
 import './font-awesome.min.css'
+import '../App.css'
 
-class sampletem extends Component{
-
-    render(){
-        return(
+class sampletem extends Component {
+    render() {
+        return (
             <div id="wrapper">
-
-
                 <header id="header">
                     <div className="inner">
+                        <Link to='/sampletem' className="logo">
 
+                                <img src={"images/logo.svg"} alt="" />
+                                <span className="title">Phantom</span>
 
-                        <Link to='/sanpletem' > <img src="images/logo.svg" alt=""/>
                         </Link>
 
 
                         <nav>
                             <ul>
-                                <li><a href="#menu">Menu</a></li>
+                                <li><Link to='./menu' >Menu</Link></li>
                             </ul>
                         </nav>
 
                     </div>
                 </header>
 
-
                 <nav id="menu">
                     <h2>Menu</h2>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="generic.html">Ipsum veroeros</a></li>
-                        <li><a href="generic.html">Tempus etiam</a></li>
-                        <li><a href="generic.html">Consequat dolor</a
-                        ></li>
-                        <li><a href="elements.html">Elements</a></li>
+                        <li><Link to='/sampletem'>Home</Link></li>
+                        <li><Link to='/sampletem2'>Ipsum veroeros</Link></li>
+                        <li><Link to='/sampletem2'>Tempus etiam</Link></li>
+                        <li><Link to='/sampletem2'>Consequat dolor</Link></li>
+                        <li><Link to='/sampletem2'>Elements</Link></li>
                     </ul>
                 </nav>
 
@@ -55,147 +53,148 @@ class sampletem extends Component{
                         <section className="tiles">
                             <article className="style1">
 									<span className="image">
-										<img src="images/pic01.jpg" alt=""/>
+										<img src={"images/pic01.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+
+                                <Link to='/sanpletem2'>
                                     <h2>Magna</h2>
                                     <div className="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
-                                            feugiat.</p>
+                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros etfeugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
+
                             </article>
                             <article className="style2">
 									<span className="image">
-										<img src="images/pic02.jpg" alt=""/>
+										<img src={"images/pic02.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Lorem</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style3">
 									<span className="image">
-										<img src="images/pic03.jpg" alt=""/>
+										<img src={"images/pic03.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Feugiat</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style4">
 									<span className="image">
-										<img src="images/pic04.jpg" alt=""/>
+										<img src={"images/pic04.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Tempus</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style5">
 									<span className="image">
-										<img src="images/pic05.jpg" alt=""/>
+										<img src={"images/pic05.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Aliquam</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style6">
 									<span className="image">
-										<img src="images/pic06.jpg" alt=""/>
+										<img src={"images/pic06.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Veroeros</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style2">
 									<span className="image">
-										<img src="images/pic07.jpg" alt=""/>
+										<img src={"images/pic07.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Ipsum</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style3">
 									<span className="image">
-										<img src="images/pic08.jpg" alt=""/>
+										<img src={"images/pic08.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Dolor</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style1">
 									<span className="image">
-										<img src="images/pic09.jpg" alt=""/>
+										<img src={"images/pic09.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Nullam</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style5">
 									<span className="image">
-										<img src="images/pic10.jpg" alt=""/>
+										<img src={"images/pic10.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Ultricies</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style6">
 									<span className="image">
-										<img src="images/pic11.jpg" alt=""/>
+										<img src={"images/pic11.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Dictum</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                             <article className="style4">
 									<span className="image">
-										<img src="images/pic12.jpg" alt=""/>
+										<img src={"images/pic12.jpg"} alt=""/>
 									</span>
-                                <a href="generic.html">
+                                <Link to='/sanpletem2'>
                                     <h2>Pretium</h2>
                                     <div className="content">
                                         <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et
                                             feugiat.</p>
                                     </div>
-                                </a>
+                                </Link>
                             </article>
                         </section>
                     </div>

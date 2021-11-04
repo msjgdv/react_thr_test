@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Route , Link , Switch} from 'react-router-dom';
 import Circle from "./circle2.svg"
 
-import { Home, Test, KidclassA, KidclassC, KidclassD, KidclassB, Choosekid, Sampletem} from './inc'
+import { Home, Test, KidclassA, KidclassC, KidclassD, KidclassB, Choosekid, Sampletem, Menu, Sampletem2} from './inc'
 
 class App extends Component {
   constructor(props) {
@@ -37,8 +37,8 @@ class App extends Component {
                   <Route path="/choosekid" component={Choosekid}/>
                   <Route path="/" component={Home} exact/>
                   <Route path="/sampletem" component={Sampletem} />
-
-
+                  <Route path="/menu" component={Menu} />
+                    <Route path="/sampletem2" component={Sampletem2} />
 
               </Switch>
               <Link to='/'> Home </Link>

@@ -5,7 +5,7 @@ class kidclassA extends Component{
     render(){
         return(
             <div className='choose2'>
-                <h3>A</h3>
+                <h3>학생들A</h3>
             </div>
         );
     }
